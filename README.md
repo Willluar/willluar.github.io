@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -47,7 +46,7 @@
   h3 { font-size: 1.1rem; margin: 0 0 0.35rem; }
   p { margin: 0 0 1rem; }
   small, .small { font-size: 0.875rem; color: var(--muted); }
- 
+
   /* Header */
   .top { padding-top: 4rem; padding-bottom: 1rem; }
   .role { color: var(--muted); font-size: 1.1rem; margin: 0 0 1rem; }
@@ -61,7 +60,7 @@
     margin-bottom: 1.25rem;
   }
   .links { display: flex; flex-wrap: wrap; gap: 0.85rem 1.25rem; font-size: 0.95rem; }
- 
+
   /* Project cards */
   .projects { display: grid; gap: 1rem; }
   .project {
@@ -89,16 +88,16 @@
     margin-top: 0.9rem;
     border: 1px solid var(--rule);
   }
- 
+
   /* Skills */
   .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.6rem 1.5rem; }
   .skill-grid div { padding: 0.25rem 0; color: var(--muted); }
   .skill-grid strong { color: var(--fg); display: block; margin-bottom: 0.25rem; font-size: 0.95rem; }
- 
+
   /* Footer */
   footer { padding: 3rem 24px 4rem; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--rule); margin-top: 4rem; }
   footer p { margin: 0; }
- 
+
   @media (max-width: 480px) {
     h1 { font-size: 2rem; }
     .top { padding-top: 2.5rem; }
@@ -106,7 +105,7 @@
 </style>
 </head>
 <body>
- 
+
 <header class="top">
   <span class="status">Available from May 2026 — open to UK relocation</span>
   <h1>William Campbell-Jones</h1>
@@ -118,9 +117,9 @@
     <a href="cv.pdf">CV (PDF)</a>
   </nav>
 </header>
- 
+
 <main>
- 
+
 <section id="about">
   <h2>About</h2>
   <p>
@@ -136,78 +135,53 @@
     elsewhere.
   </p>
 </section>
- 
+
 <section id="projects">
   <h2>Projects</h2>
   <div class="projects">
- 
+
     <article class="project">
       <div class="project-head">
-        <h3>[PROJECT NAME — e.g. Game Jam Entry Title]</h3>
-        <span class="project-meta">Game jam · 2025</span>
+        <h3>Dynamic Difficulty Roguelike</h3>
+        <span class="project-meta">Final-year project · 2026</span>
       </div>
-      <p>[One or two sentences on what the game is, what you built, what worked. E.g. "A 48-hour jam entry where I built the player controller and core combat loop in Unity. Team of four; I owned all gameplay code."]</p>
+      <p>Turn-based grid roguelike in Unity with an adaptive difficulty system that retunes enemy stats and per-element resistances between runs based on logged player performance. I built the DDA manager (per-element resistance cap, total pool cap, strength multiplier that grows linearly with each analysed run up to +75%, enemy health and damage scaling tied to average stages cleared across the last five runs), plus the spell system, A* pathfinder, and line-of-sight checks.</p>
+      <p>An automated simulation harness batches runs through a SimulatedPlayerController and writes telemetry via a RunDataLogger, so I can iterate on the difficulty curve without playing dozens of full runs by hand. Toggle between DDA-on and DDA-off runs to compare cleanly.</p>
       <div class="tags">
         <span class="tag">C#</span>
         <span class="tag">Unity</span>
-        <span class="tag">Git</span>
+        <span class="tag">Game AI</span>
+        <span class="tag">A* pathfinding</span>
+        <span class="tag">Data-driven design</span>
       </div>
       <div class="project-links">
-        <a href="#">View on GitHub</a>
-        <a href="#">Play in browser (itch.io)</a>
+        <a href="https://github.com/Willluar/DynamicDifficultyRoguelike">View on GitHub</a>
       </div>
-      <!-- Replace with real screenshot. Recommended: 1600x900 PNG/JPG. -->
-      <!-- <img src="projects/jam1.png" alt="Screenshot of [project name]"> -->
+      <!-- Add a screenshot once a build is in good visual shape: -->
+      <!-- <img src="projects/dda-roguelike.png" alt="Screenshot of the Dynamic Difficulty Roguelike"> -->
     </article>
- 
+
     <article class="project">
       <div class="project-head">
-        <h3>[PROJECT NAME — second jam or coursework]</h3>
-        <span class="project-meta">Game jam · 2024</span>
+        <h3>Island Exploration Sandbox</h3>
+        <span class="project-meta">Unity coursework · 2024</span>
       </div>
-      <p>[One or two sentences. Highlight the technically interesting bit: AI you built, a system you debugged, a problem you solved.]</p>
+      <p>First-person 3D exploration scene. The player picks up objects, places them on triggers to unlock a teleport between two areas (beach and basement), with the ambient audio mix swapping in real time when they cross over. I wrote the interaction layer: pickup and put-down logic, trigger zones, locked vs. unlocked UI state, and the audio source control. Environment uses licensed low-poly asset packs.</p>
       <div class="tags">
         <span class="tag">C#</span>
         <span class="tag">Unity</span>
+        <span class="tag">3D</span>
+        <span class="tag">Interaction systems</span>
       </div>
       <div class="project-links">
-        <a href="#">View on GitHub</a>
+        <a href="https://github.com/Willluar/My-project-1">View on GitHub</a>
       </div>
     </article>
- 
-    <article class="project">
-      <div class="project-head">
-        <h3>[UNIVERSITY COURSEWORK — e.g. Graphics Programming Project]</h3>
-        <span class="project-meta">UWE coursework · 2025</span>
-      </div>
-      <p>[Describe the brief, your approach, the result. If it's a graphics project, mention the rendering technique. If it's an AI project, mention the algorithm.]</p>
-      <div class="tags">
-        <span class="tag">C++</span>
-        <span class="tag">OpenGL</span>
-      </div>
-      <div class="project-links">
-        <a href="#">View on GitHub</a>
-      </div>
-    </article>
- 
-    <article class="project">
-      <div class="project-head">
-        <h3>[UNIVERSITY COURSEWORK — e.g. AI Systems Module]</h3>
-        <span class="project-meta">UWE coursework · 2025</span>
-      </div>
-      <p>[Brief description. What was the problem, what did you implement, what did you learn?]</p>
-      <div class="tags">
-        <span class="tag">Python</span>
-        <span class="tag">Algorithms</span>
-      </div>
-      <div class="project-links">
-        <a href="#">View on GitHub</a>
-      </div>
-    </article>
- 
+
   </div>
+  <p class="small" style="margin-top: 1rem;">More work in progress at <a href="https://github.com/Willluar">github.com/Willluar</a>. Game-jam entries and a graphics coursework write-up going up over the next two weeks.</p>
 </section>
- 
+
 <section id="skills">
   <h2>Skills</h2>
   <div class="skill-grid">
@@ -229,14 +203,14 @@
     </div>
   </div>
 </section>
- 
+
 <section id="experience">
   <h2>Experience</h2>
   <p><strong>Retail Assistant</strong>, Co-op · 2025 — present</p>
   <p><strong>Live Chat Agent</strong>, AXS (Foundever) · May 2024 — Sept 2024. Real-time technical support for ticketing customers.</p>
   <p><strong>Front Line Agent</strong>, BT · Mar 2018 — Apr 2020. Broadband and telephony technical support; consistent KPI delivery on quality and resolution.</p>
 </section>
- 
+
 <section id="contact">
   <h2>Contact</h2>
   <p>
@@ -248,12 +222,12 @@
     <a href="https://github.com/Willluar">GitHub</a>.
   </p>
 </section>
- 
+
 </main>
- 
+
 <footer>
   <p>© 2026 William Campbell-Jones. Built with HTML and CSS. Hosted on GitHub Pages.</p>
 </footer>
- 
+
 </body>
 </html>
