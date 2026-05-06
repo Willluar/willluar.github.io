@@ -178,7 +178,7 @@
       <div class="project-links">
         <a href="https://github.com/Willluar/One-Click-Maze">View on GitHub</a>
       </div>
-      <img src="projects/one-click-maze.png" alt="One-Click Maze in the execution phase, showing a procedurally generated maze with the player mid-slide and a queued move list on the side">
+      <img src="one-click-maze.png" alt="One-Click Maze in the execution phase, showing a procedurally generated maze with the player mid-slide and a queued move list on the side">
     </article>
 
     <article class="project">
