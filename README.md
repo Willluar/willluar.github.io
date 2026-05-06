@@ -163,6 +163,26 @@
 
     <article class="project">
       <div class="project-head">
+        <h3>One-Click Maze</h3>
+        <span class="project-meta">Solo project · 2026</span>
+      </div>
+      <p>Three-phase puzzle game in Godot 4. Each level cycles through preview (memorise the maze), planning (the maze hides and you queue up to twelve directional moves), and execution (your queue plays out blind). Procedural maze generation uses an iterative recursive-backtracker carve over a (cells × 2 + 1) tile grid with stack-based DFS, seedable for repeatable runs.</p>
+      <p>Ice levels swap in a sliding movement model (you keep going until you hit a wall) and retint the tilemap via modulate. Player movement uses framerate-independent lerp, camera shake and a bump-and-recover animation on collisions, and per-phase camera zoom. Solo build including start menu, options screen, win screen, and a settings autoload.</p>
+      <div class="tags">
+        <span class="tag">GDScript</span>
+        <span class="tag">Godot 4</span>
+        <span class="tag">Procedural generation</span>
+        <span class="tag">Game feel</span>
+        <span class="tag">2D</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Willluar/One-Click-Maze">View on GitHub</a>
+      </div>
+      <img src="projects/one-click-maze.png" alt="One-Click Maze in the execution phase, showing a procedurally generated maze with the player mid-slide and a queued move list on the side">
+    </article>
+
+    <article class="project">
+      <div class="project-head">
         <h3>Island Exploration Sandbox</h3>
         <span class="project-meta">Unity coursework · 2024</span>
       </div>
@@ -179,7 +199,7 @@
     </article>
 
   </div>
-  <p class="small" style="margin-top: 1rem;">More work in progress at <a href="https://github.com/Willluar">github.com/Willluar</a>. Game-jam entries and a graphics coursework write-up going up over the next two weeks.</p>
+  <p class="small" style="margin-top: 1rem;">More at <a href="https://github.com/Willluar">github.com/Willluar</a>.</p>
 </section>
 
 <section id="skills">
@@ -191,7 +211,7 @@
     </div>
     <div>
       <strong>Tools</strong>
-      Unity, Git & GitHub, Visual Studio
+      Unity, Godot 4, Git & GitHub, Visual Studio
     </div>
     <div>
       <strong>Practices</strong>
@@ -206,6 +226,7 @@
 
 <section id="experience">
   <h2>Experience</h2>
+  <p><strong>Team contributor</strong>, <a href="https://heretic-media.itch.io/roadmage">RoadMage</a> (Heretic Media) · April 2026. Top-down driving game released on itch.io. Audio integration in Unity; skill and upgrade system design.</p>
   <p><strong>Retail Assistant</strong>, Co-op · 2025 — present</p>
   <p><strong>Live Chat Agent</strong>, AXS (Foundever) · May 2024 — Sept 2024. Real-time technical support for ticketing customers.</p>
   <p><strong>Front Line Agent</strong>, BT · Mar 2018 — Apr 2020. Broadband and telephony technical support; consistent KPI delivery on quality and resolution.</p>
